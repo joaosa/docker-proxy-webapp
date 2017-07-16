@@ -1,4 +1,6 @@
 webapp:
   build: ./webapp
+  environment:
+    PORT: 8080
   ports:
     - 8081:8080

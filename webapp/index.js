@@ -1,4 +1,6 @@
 const http = require('http');
+const port = process.env.PORT;
+
 http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/html'});
   const html = `
@@ -8,4 +10,4 @@ http.createServer((req, res) => {
     </section>
   `;
   res.end(html);
-}).listen(8080);
+}).listen(port);
