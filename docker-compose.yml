@@ -4,3 +4,8 @@ webapp:
     PORT: 8080
   ports:
     - 8081:8080
+
+reverse-proxy:
+  build: ./reverse-proxy
+  ports:
+    - 8080:80
