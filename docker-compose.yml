@@ -1,0 +1,4 @@
+webapp:
+  build: ./webapp
+  ports:
+    - 8081:8080
