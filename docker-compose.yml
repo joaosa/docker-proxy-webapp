@@ -1,11 +1,10 @@
-webapp:
-  build: ./webapp
-  environment:
-    PORT: 8080
-  ports:
-    - 8081:8080
-
-reverse-proxy:
-  build: ./reverse-proxy
-  ports:
-    - 8080:80
+version: "3"
+services:
+  webapp-1:
+    build: ./webapp
+    environment:
+      PORT: 8080
+  reverse-proxy:
+    build: ./reverse-proxy
+    ports:
+      - 8080:80
