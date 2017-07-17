@@ -4,6 +4,12 @@ services:
     build: ./webapp
     environment:
       PORT: 8080
+      INDEX: 1
+  webapp-2:
+    build: ./webapp
+    environment:
+      PORT: 8080
+      INDEX: 2
   reverse-proxy:
     build: ./reverse-proxy
     ports:
